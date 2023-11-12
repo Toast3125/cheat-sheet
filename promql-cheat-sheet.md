@@ -13,6 +13,12 @@ windows_service_state{name=~cyserver, state=~running}
 ```
 
 # Functions
+| <!-- -->      | <!-- -->        |
+|:-------------:|:---------------:|
+| Row 1         | Calculates the total sum of matching time series        |
+| Row 2         | Determines the average value of matching time series        |
+| Row 3         | Provides the minimum value from all matching time series      |
+
 ```
 // Calculates the total sum of matching time series
 sum
