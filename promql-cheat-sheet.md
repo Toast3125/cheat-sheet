@@ -1,8 +1,9 @@
 # Basics of PromQL
+PromQL enables querying time series data using the following basic syntax
 ```
-// PromQL enables querying time series data using the following basic syntax
 <metric_name>{<label_name>=<label_value>}
-
+```
+```
 // For example, in this query, we retrieve all services from the Windows server
 windows_service_state
 
