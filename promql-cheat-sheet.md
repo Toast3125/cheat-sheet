@@ -54,7 +54,7 @@ irate
 // Are used to show the logical sequence
 ()
 
-// Are used to filter in metriks
+// Are used to filter in metrics
 {}
 
 // Are used to set a time range
