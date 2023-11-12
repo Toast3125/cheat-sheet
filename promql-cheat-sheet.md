@@ -3,11 +3,12 @@ PromQL enables querying time series data using the following basic syntax
 ```
 <metric_name>{<label_name>=<label_value>}
 ```
+For example, in this query, we retrieve all services from the Windows server
 ```
-// For example, in this query, we retrieve all services from the Windows server
 windows_service_state
-
+```
 We can add a filter to show only the service named "cyserver" when it's in the "running" state
+```
 windows_service_state{name=~cyserver, state=~running}
 ```
 
