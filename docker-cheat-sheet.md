@@ -65,7 +65,7 @@ docker image prune
 ```
 
 # Docker Compose
-// Start a containers out of a Docker Compose file
+Start a containers out of a Docker Compose file
 ```
 docker-compose up
 ```
