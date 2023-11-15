@@ -1,5 +1,12 @@
 # Basic of FluxQL
+## Syntax
+## Data flow
+## Selection of measurements, fields and tags
 
-from(bucket: "MeinBucket")
-  |> range(start: -1h) 
-  |> filter(fn: (r) => r._measurement == "Cisco" and r._field == "SG300")
+# Data filtering and selection
+## Filtering data
+## Conditional query
+
+# Transformationen
+## Aggregation
+## Time manipulation
