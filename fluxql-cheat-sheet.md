@@ -16,6 +16,7 @@ We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r
 |:-------------:|:---------------:|
 | Measurement | Category of data, similar to tables in a database (set in telegraf) |
 | Field | Actual data within a measurement, like columns in a table (set in telegraf) |
+| Tag | Extra metadata adding context to measurements for better categorization and filtering |
 
 ## Data flow
 ## Selection of measurements, fields and tags
