@@ -10,7 +10,10 @@ We select data from the bucket "Bucket Name". ```from(bucket: "Bucket Name")``` 
 We only select data which is in the set time range. ```|> range(start: v.timeRangeStart, stop: v.timeRangeStop)``` <br>
 We filter the selected data for the Measurement "Measurement Name". ```|> filter(fn: (r) => r["_measurement"] == "Measurement Name")``` <br>
 We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r["_field"] == "Field Name")``` <br>
-## What is an FIeld and what is a Measurement
+
+## What is an Field and what is a Measurement
+Measurement: Category of data, similar to tables in a database.
+Field: Actual data within a measurement, like columns in a table.
 ## Data flow
 ## Selection of measurements, fields and tags
 
