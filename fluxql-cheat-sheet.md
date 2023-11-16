@@ -11,7 +11,7 @@ We only select data which is in the set time range. ```|> range(start: v.timeRan
 We filter the selected data for the Measurement "Measurement Name". ```|> filter(fn: (r) => r["_measurement"] == "Measurement Name")``` <br>
 We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r["_field"] == "Field Name")``` <br>
 
-## What is an Field and what is a Measurement
+## Definition
 | <!-- -->      | <!-- -->        |
 |:-------------:|:---------------:|
 | Measurement | Category of data, similar to tables in a database (set in telegraf) |
