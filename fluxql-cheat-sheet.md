@@ -12,8 +12,11 @@ We filter the selected data for the Measurement "Measurement Name". ```|> filter
 We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r["_field"] == "Field Name")``` <br>
 
 ## What is an Field and what is a Measurement
-Measurement: Category of data, similar to tables in a database.
-Field: Actual data within a measurement, like columns in a table.
+| <!-- -->      | <!-- -->        |
+|:-------------:|:---------------:|
+| Measurement | Category of data, similar to tables in a database (set in telegraf) |
+| Field | Actual data within a measurement, like columns in a table (set in telegraf) |
+
 ## Data flow
 ## Selection of measurements, fields and tags
 
