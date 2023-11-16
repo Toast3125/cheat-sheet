@@ -22,11 +22,11 @@ We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r
 | <!-- -->      | <!-- -->        |
 |:-------------:|:---------------:|
 | from(): Source data from a specified bucket or location | ```from(bucket: "example_bucket")``` |
-| range(): Define the time range for data retrieval | ```|> range(start: v.timeRangeStart, stop: v.timeRangeStop)``` |
-| filter(): Filter data based on specified conditions | ```|> filter(fn: (r) => r["_measurement"] == "measurement_name")``` |
-| group(): Group data based on specific criteria. | ```|> group(columns: ["column_name"])``` |
-| map(): Modify or transform data. | ```|> map(fn: (r) => ({ r with new_field: r.old_field * 2 }))``` |
-| yield(): Output or present the final result. | ```|> yield()``` |
+| range(): Define the time range for data retrieval | ```range(start: v.timeRangeStart, stop: v.timeRangeStop) ``` |
+| filter(): Filter data based on specified conditions | ```filter(fn: (r) => r["_measurement"] == "measurement_name")``` |
+| group(): Group data based on specific criteria. | ```group(columns: ["column_name"])``` |
+| map(): Modify or transform data. | ```map(fn: (r) => ({ r with new_field: r.old_field * 2 }))``` |
+| yield(): Output or present the final result. | ``` yield()``` |
 
 ## Selection of measurements, fields and tags
 
