@@ -1,13 +1,12 @@
 # Basic of FluxQL
 ## Syntax
-Explained at an example
 ```
 from(bucket: "Bucket Name")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
   |> filter(fn: (r) => r["_measurement"] == "Measurement Name")
   |> filter(fn: (r) => r["_field"] == "Field Name")
 ```
-Select Data: Fetch data from the "Bucket Name" bucket.
+Select Data: Fetch data from the "Bucket Name" bucket. <br>
 Set Time Range: Define the time range using v.timeRangeStart and v.timeRangeStop.
 Filter by Measurement: Filter data where _measurement is "Measurement Name".
 Filter by Field: Further filter data by _field "Field Name".
