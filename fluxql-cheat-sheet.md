@@ -28,7 +28,13 @@ We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r
 | map(): Modify or transform data. | ```map(fn: (r) => ({ r with new_field: r.old_field * 2 }))``` |
 | yield(): Output or present the final result. | ``` yield()``` |
 
-## Collecting / Filtering
+## Selecting Data
+| <!-- -->      | <!-- -->        |
+|:-------------:|:---------------:|
+| from(): Select data from a specific measurement or bucket | ```from(bucket: "example_bucket")``` |
+| filter() - Measurement: Filter data based on a specific measurement | ```filter(fn: (r) => r["_measurement"] == "measurement_name")``` |
+| filter() - Field: Filter data based on a specific field within a measurement. | ```filter(fn: (r) => r["_field"] == "field_name")``` |
+| filter() - Tag: Filter data based on a specific tag. | ```filter(fn: (r) => r["tag_key"] == "tag_value")``` |
 
 # Data filtering and selection
 ## Filtering data
