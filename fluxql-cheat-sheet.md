@@ -36,7 +36,7 @@ We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r
 | filter() - Field: Filter data based on a specific field within a measurement. | ```filter(fn: (r) => r["_field"] == "field_name")``` |
 | filter() - Tag: Filter data based on a specific tag. | ```filter(fn: (r) => r["tag_key"] == "tag_value")``` |
 
-# Data filtering and selection
+# Data filtering
 ## Filtering data
 ## Conditional query
 
