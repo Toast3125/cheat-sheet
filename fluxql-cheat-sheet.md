@@ -28,7 +28,7 @@ We filter the selcted data for the field "Field Name". ```|> filter(fn: (r) => r
 | map(): Modify or transform data. | ```map(fn: (r) => ({ r with new_field: r.old_field * 2 }))``` |
 | yield(): Output or present the final result. | ``` yield()``` |
 
-## Selection of measurements, fields and tags
+## Collecting / Filtering
 
 # Data filtering and selection
 ## Filtering data
