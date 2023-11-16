@@ -6,11 +6,11 @@ from(bucket: "Bucket Name")
   |> filter(fn: (r) => r["_measurement"] == "Measurement Name")
   |> filter(fn: (r) => r["_field"] == "Field Name")
 ```
-Select Data: Fetch data from the "Bucket Name" bucket. <br>
-Set Time Range: Define the time range using v.timeRangeStart and v.timeRangeStop. <br>
-Filter by Measurement: Filter data where _measurement is "Measurement Name". <br>
-Filter by Field: Further filter data by _field "Field Name". <br>
-
+```from(bucket: "Bucket Name")``` We select data from the bucket "Bucket Name". <br>
+```|> range(start: v.timeRangeStart, stop: v.timeRangeStop)``` We only select data which is in the set time range. <br>
+```|> filter(fn: (r) => r["_measurement"] == "Measurement Name")``` We filter the selected data for the Measurement "Measurement Name". <br>
+```|> filter(fn: (r) => r["_field"] == "Field Name")``` We filter the selcted data for the field "Field Name". <br>
+## What is an FIeld and what is a Measurement
 ## Data flow
 ## Selection of measurements, fields and tags
 
