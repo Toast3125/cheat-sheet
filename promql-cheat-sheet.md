@@ -28,7 +28,7 @@ windows_service_state{name=~cyserver, state=~running}
 |:-------------:|:---------------:|
 | = | Is the value equal to another value |
 | != | Is the value not equal to another value |
-| ~= | Is the value equal to multipul values |
+| =~ | Is the value equal to multipul values |
 | !~ | Is the value not equal to multipul values |
 
 # Parenthesis
