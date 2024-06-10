@@ -67,15 +67,15 @@ docker image prune
 # Docker Compose
 Start a containers out of a Docker Compose file
 ```
-docker-compose up
+docker compose up
 ```
 Stop and remove container out of a Docker Compose file
 ```
-docker-compose down
+docker compose down
 ```
 List all container and there status
 ```
-docker-compose ps
+docker compose ps
 ```
 
 # Volumes
